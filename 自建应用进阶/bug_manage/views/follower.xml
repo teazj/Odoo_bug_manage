@@ -1,0 +1,31 @@
+<odoo>
+    <data>
+        <!--现在只是在 res.partner的表单中加入一个 bug_ids 的字段-->
+        <record model="ir.ui.view" id="bug_manage.follower_form">
+            <field name="name">follower_form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name="mobile" position="after">
+                    <field name="bug_ids"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="bug_manage.follower_action_window">
+            <field name="name">follower列表</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="follower管理" id="bug_manage.follwer_menu" parent="bug_manage.bug_menu_root"/>
+
+        <menuitem name="follower列表" id="bug_manage.follwer_menu_list" parent="bug_manage.follwer_menu"
+                  action="bug_manage.follower_action_window"/>
+
+    </data>
+</odoo>
+
+
+
+

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bug_manage_advanced_bug_manage_advanced,bug_manage_advanced.bug_manage_advanced,model_bug_manage_advanced_bug_manage_advanced,,1,0,0,0

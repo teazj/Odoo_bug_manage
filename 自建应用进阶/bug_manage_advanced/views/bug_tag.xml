@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <act_window id="bug_manage_advanced.tag_action_window"
+                    name="bug_manage tag window"
+                    res_model="bm.bug_tag"
+                    view_mode="tree,form"
+                    src_model="bm.bug_tag"
+                    multi="True"
+                    target="current"/>
+
+        <!-- actions -->
+        <menuitem name="tag列表" id="bug_manage_advanced.tag_menu_list" parent="bug_manage.bug_menu"
+                  action="bug_manage_advanced.tag_action_window"/>
+
+    </data>
+</odoo>

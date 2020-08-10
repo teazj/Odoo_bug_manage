@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+
+        <template id="bugs_templates" name="bug">
+            <div class="container">
+                <h1>未关闭的bug</h1>
+                <t t-foreach="bugs_open" t-as="bug">
+                    <div class="row">
+                        <span t-field="bug.name"/>
+                    </div>
+                </t>
+            </div>
+        </template>
+    </data>
+</odoo>

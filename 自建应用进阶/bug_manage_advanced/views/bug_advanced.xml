@@ -1,0 +1,16 @@
+<odoo>
+<data>
+
+    <record model="ir.ui.view" id="bug_manage_advanced.form">
+        <field name="name">bug 继承表单</field>
+        <field name="model">bm.bug</field>
+        <field name="inherit_id" ref="bug_manage.form"/>
+        <field name="arch" type="xml">
+            <field name="follower_ids" position="after">
+                <field name="stage_id"/>
+                <field name="tag_ids"/>
+            </field>
+        </field>
+    </record>
+</data>
+</odoo>
